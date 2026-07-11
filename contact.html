@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de prise de rendez-vous médical</title>
+     <ul>
+                       <li><a href="index.html">Accueil</a></li>
+                       <li><a href="urgences.html">Urgence</a></li>
+                       <li><a href="medecins.html">Médecins</a></li> 
+                       <li><a href="centres.html">Centres de santé</a></li> 
+                      <li><a href="contact.html">Contact</a></li>
+                       <li><a href="maladie.html">Maladie</a></li>
+                       <li><a href="conseils.html">Conseil</a></li>
+                    </ul>
+ </head>
+ <body>
+ <h1>Formulaire complet de prise de rendez-vous</h1>
+ <form action="#" method="post">
+    <!-- FIELDSET 1 -->
+
+    <fieldset>
+        <legend>1. Identité du patient</legend>
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        <label for="sexe">Sexe :</label><br>
+        <select id="sexe" name="sexe">
+            <option>Masculin</option>
+            <option>Féminin</option>
+            <option>Autre</option>
+        </select><br><br>
+        <label for="dateNaissance">Date de naissance :</label><br>
+        <input type="date" id="dateNaissance" name="dateNaissance"><br><br>
+        <label for="age">Âge :</label><br>
+        <input type="number" id="age" name="age" min="0"><br><br>
+        <label for="email">Adresse e-mail :</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="telephone">Téléphone :</label><br>
+        <input type="tel" id="telephone" name="telephone"><br><br>
+        <label for="adresse">Adresse :</label><br>
+        <textarea id="adresse" name="adresse"></textarea><br><br>
+        <label for="profession">Profession :</label><br>
+        <input type="text" id="profession" name="profession"><br><br>
+        <label for="groupe">Groupe sanguin :</label><br>
+        <select id="groupe" name="groupe">
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+    </fieldset>
+    <br>
+    <!-- FIELDSET 2 -->
+
+    <fieldset>
+        <legend>2. Besoin médical</legend>
+        <label for="service">Service demandé :</label><br>
+        <select id="service" name="service">
+            <option>Médecine générale</option>
+            <option>Cardiologie</option
+            <option>Pédiatrie</option>
+            <option>Gynécologie</option>
+            <option>Dermatologie</option>
+        </select><br><br>
+        <label for="medecin">Médecin souhaité :</label><br>
+        <input type="text" id="medecin" name="medecin"><br><br>
+        <label for="dateRdv">Date souhaitée :</label><br>
+        <input type="date" id="dateRdv" name="dateRdv"><br><br>
+        <label for="heure">Heure souhaitée :</label><br>
+        <input type="time" id="heure" name="heure"><br><br>
+        <label for="motif">Motif de consultation :</label><br>
+        <textarea id="motif" name="motif"></textarea><br><br>
+        <label>Urgence :</label><br>
+        <input type="radio" id="oui" name="urgence" value="Oui">
+        <label for="oui">Oui</label>
+        <input type="radio" id="non" name="urgence" value="Non">
+        <label for="non">Non</label><br><br>
+        <label>Symptômes :</label><br>
+        <input type="checkbox" name="symptomes" value="Fièvre"> Fièvre<br>
+        <input type="checkbox" name="symptomes" value="Douleur"> Douleur<br>
+        <input type="checkbox" name="symptomes" value="Toux"> Toux<br>
+        <input type="checkbox" name="symptomes" value="Fatigue"> Fatigue<br><br>
+        <label for="allergies">Allergies connues :</label><br>
+        <textarea id="allergies" name="allergies"></textarea>
+    </fieldset>
+    <br>
+
+    <!-- FIELDSET 3 -->
+
+    <fieldset>
+        <legend>3. Préférences de contact</legend>
+        <label>Mode de contact préféré :</label><br>
+        <input type="radio" id="tel" name="contact" value="Téléphone">
+        <label for="tel">Téléphone</label><br>
+        <input type="radio" id="mail" name="contact" value="E-mail">
+        <label for="mail">E-mail</label><br>
+        <input type="radio" id="sms" name="contact" value="SMS">
+        <label for="sms">SMS</label><br><br>
+        <label for="heureContact">Heure préférée :</label><br>
+        <input type="time" id="heureContact" name="heureContact"><br><br>
+        <label for="langue">Langue :</label><br>
+        <select id="langue" name="langue">
+            <option>Français</option>
+            <option>Anglais</option>
+            <option>Ewe</option>
+            <option>Kabyè</option>
+        </select><br><br>
+        <label>
+            <input type="checkbox" name="rappel"> Recevoir un rappel de rendez-vous
+        </label><br><br>
+            <input type="checkbox" name="newsletter"> Recevoir les informations de santé
+        </label><br><br>
+        <label>
+            <input type="checkbox" name="consentement" required> J'accepte le traitement de mes données personnelles.
+        </label>
+    </fieldset>
+
+       <br>
+         <input type="reset" value="Réinitialiser">
+         <input type="submit" value="Envoyer la demande">
+       </br>
+       </form>
+ <section>
+
+    <h2>Questions médicales fréquentes (FAQ)</h2>
+    <details>
+        <summary>1. Comment prendre un rendez-vous médical ?</summary>
+        <p>Remplissez le formulaire de rendez-vous, choisissez le service souhaité et sélectionnez une date disponible. Une confirmation vous sera envoyée par téléphone ou par e-mail.</p>
+    </details>
+    <details>
+        <summary>2. Quels documents dois-je apporter ?</summary>
+        <p>Munissez-vous d'une pièce d'identité, de votre carnet de santé, des résultats d'examens récents, des ordonnances en cours et, si applicable, de votre carte d'assurance maladie.</p>
+    </details>
+    <details>
+        <summary>3. Que faire en cas d'urgence médicale ?</summary>
+        <p>Appelez immédiatement les services d'urgence ou rendez-vous au centre de santé le plus proche. Ne retardez pas les soins si la situation est grave.</p>
+    </details>
+    <details>
+
+        <summary>4. Dois-je être à jeun avant une prise de sang ?</summary>
+        <p>Cela dépend de l'analyse demandée. Certaines analyses nécessitent un jeûne de 8 à 12 heures. Suivez toujours les consignes de votre médecin ou du laboratoire.</p>
+    </details>
+    <details>
+        <summary>5. Puis-je annuler ou reporter mon rendez-vous ?</summary>
+        <p>Oui. Il est recommandé de prévenir le centre médical dès que possible afin de libérer le créneau pour un autre patient.</p>
+    </details>
+    <details>
+        <summary>6. Comment obtenir mes résultats d'examens ?</summary>
+        <p>Les résultats peuvent être remis directement au centre de santé, envoyés par e-mail sécurisé ou communiqués lors d'une consultation médicale.</p>
+    </details>
+
+    <details>
+        <summary>7. Les consultations sont-elles payantes ?</summary>
+        <p>Les frais varient selon le type de consultation, le spécialiste consulté et les éventuelles prises en charge par l'assurance maladie.</p>
+    </details>
+    <details>
+
+        <summary>8. Puis-je consulter un spécialiste sans ordonnance ?</summary>
+        <p>Cela dépend de la réglementation en vigueur et de la spécialité concernée. Certains spécialistes acceptent les consultations directes.</p>
+    </details>
+
+    <details>
+        <summary>9. Comment prévenir les maladies infectieuses ?</summary>
+        <p>Respectez les règles d'hygiène, lavez-vous régulièrement les mains, faites-vous vacciner lorsque cela est recommandé et évitez les contacts avec les personnes malades.</p>
+    </details>
+
+    <details>
+        <summary>10. Quand faut-il consulter un médecin ?</summary>
+        <p>Consultez rapidement en cas de fièvre persistante, douleurs importantes, difficultés respiratoires, saignements inhabituels, perte de connaissance ou aggravation de votre état de santé.</p>
+    </details>
+</section>
+<section id="contact">
+
+    <h2>Nous contacter</h2>
+    <address>
+        <strong>Centre Médical Santé Plus</strong><br>
+        Avenue de la Santé, Quartier Administratif<br>
+        BP 125, Lomé -Togo<br><br>
+        Téléphone :
+        <a href="tel:+22890000000">+228 90 00 00 00</a><br>
+        Urgences :
+        <a href="tel:+22822222222">+228 22 22 22 22</a><br>
+        E-mail :
+        <a href="mailto:contact@santeplus.tg"> contact@santeplus.tg </a><br>
+        Site web :
+        <a href="https://www.santeplus.tg" target="_blank"> www.santeplus.tg</a>
+    </address>
+    <h3>Localisation</h3>
+    <iframe
+        src="https://www.google.com/maps?q=Lom%C3%A9,Togo&output=embed"
+        title="Carte de localisation du Centre Médical Santé Plus"
+        width="100%"
+        height="350"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+    <p>
+        Le centre médical est situé à proximité du centre-ville de Lomé.
+        Il est facilement accessible en taxi, moto-taxi ou véhicule personnel.
+        Un parking est disponible pour les visiteurs
+    </p>
+    <h3>Horaires d'ouverture</h3>
+    <table border="1">
+        <caption>Horaires standards du centre médical</caption>
+        <thead>
+            <tr>
+                <th>Jour</th>
+                <th>Ouverture</th>
+                <th>Fermeture</th>
+                <th>Service d'urgence</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td>07h30</td>
+                <td>18h00</td>
+                <td>24h/24</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>07h30</td>
+                <td>18h00</td>
+                <td>24h/24</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>07h30</td>
+                <td>18h00</td>
+                <td>24h/24</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>07h30</td>
+                <td>18h00</td>
+                <td>24h/24</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>07h30</td>
+                <td>18h00</td>
+                <td>24h/24</td>
+            </tr>
+            <tr>
+                <td>Samedi</td>
+                <td>08h00</td>
+                <td>13h00</td>
+                <td>24h/24</td>
+            </tr>
+            <tr>
+                <td>Dimanche</td>
+                <td>Fermé</td>
+                <td>Fermé</td>
+                <td>24h/24</td>
+            </tr>
+        </tbody>
+</table>
+</section>
